@@ -1,0 +1,89 @@
+
+/* Base styles (Control the Page) */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* step 2: structure visually */
+header{
+    background-color: #ffffff;
+    padding: 1.5rem;
+}
+
+/* main section
+This centers the content, improves readability & prepares me for responsive design */
+main{
+    padding: 2.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section{
+    margin-bottom: 2.5rem;
+}
+
+/* Notice the following parts that is: header, main & section: No flexbox, no grid and no hacks have been included
+, just spacing and clarity */
+
+/* step 3: Text styling */
+
+h1{
+    margin-bottom: 0.5rem;
+}
+
+h2{
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+p{
+    max-width: 700px;
+}
+
+
+/* step 4: Link styling */
+/* basic professionalism */
+
+a{
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.highlight{
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+/* nav lists */
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    margin-bottom: 0.5rem;
+}
+
+/* footer */
+footer{
+    background-color: #ffffff;
+    pad: 1.5rem;
+}
+
+
