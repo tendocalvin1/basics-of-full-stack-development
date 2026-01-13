@@ -18,6 +18,10 @@ header{
     border-bottom: 1px solid #ddd;
 }
 
+header > nav{
+    margin-top: 0.5rem;
+}
+
 main{
     padding: 2rem;
     max-width: 900px;
@@ -61,14 +65,23 @@ footer{
     padding: 1.5rem;
     background-color: #ffffff;
 }
+/* 
+This is professional-level structure:
 
+Layout → Flexbox
+
+Spacing → gap
+
+Reset → padding, margin, list-style
+
+*/
 nav ul{
-    list-style: none;
+    display: flex;
+    gap: 3rem;
+    justify-content:center;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
-nav li{
-    margin-bottom: 0.5rem;
-}
 
