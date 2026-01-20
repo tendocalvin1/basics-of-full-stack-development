@@ -6,8 +6,38 @@ p{
     color:black;
 }
 
-.highlight{
+/* .highlight p{
     padding: 1rem;
-    background-color: #f4f4f4;
+    background-color: blue;
+    border: 2px solid black;
 
+}
+
+.highlight ul{
+    border: 2px solid black;
+} */
+
+.highlight {
+    width: 400px;
+    padding: 20px;
+    margin: 30px auto;
+    border: 4px soild #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+header nav li {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    
 }
