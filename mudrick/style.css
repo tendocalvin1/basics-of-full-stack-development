@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+p{
+    color:black;
+}
+
+.highlight{
+    padding: 1rem;
+    background-color: #f4f4f4;
+
+}
