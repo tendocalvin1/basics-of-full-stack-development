@@ -30,14 +30,35 @@ p{
 }
 
 
-header nav li {
-    justify-content: center;
-    align-items: center;
+header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* This is for header
+Why this works:
+Main axis = vertical (column)
+align-items: center → horizontal centering
+Header content is stacked and centered cleanly 
+*/
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
 }
 
-footer{
+/* Why this works: This is for the list
+ul is the layout container
+gap replaces margins (professional approach)
+Main axis = horizontal
+Links are centered along main axis */
+
+footer {
     display: flex;
     justify-content: center;
-    
+    gap: 2rem;
 }
