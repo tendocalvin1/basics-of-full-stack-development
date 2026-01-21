@@ -62,3 +62,25 @@ footer {
     justify-content: center;
     gap: 2rem;
 }
+
+/* flex-direction: row → main axis is horizontal
+flex-direction: column → main axis is vertical */
+
+/* 📌 Memorize this sentence exactly: Flex-direction defines the main axis. Justify-content only aligns along it. */
+
+/* 1️⃣ What defines the main axis in Flexbox? Answer: flex-direction */
+
+/* 2️⃣ Why align-items: center centered your header content horizontally : align-items ALWAYS works on the cross axis
+NEVER on the main axis*/
+
+
+/* 3️⃣ Why gap is better than margins for flex layouts: 
+gap only adds space between items, not on the outer edges of the container */
+
+/* 🔒 LOCK THIS INTO MEMORY (DO NOT FORGET)
+
+Memorize these three laws of Flexbox:
+
+1️⃣ flex-direction defines the main axis
+2️⃣ justify-content works on the main axis
+3️⃣ align-items works on the cross axis */
