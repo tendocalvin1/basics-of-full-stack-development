@@ -1,43 +1,136 @@
-*{
+/* RESET */
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-p{
-    color:black;
+/* BODY */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
 }
 
-/* .highlight p{
-    padding: 1rem;
-    background-color: blue;
-    border: 2px solid black;
-
+/* TYPOGRAPHY */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
-.highlight ul{
-    border: 2px solid black;
-} */
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
 
-.highlight {
-    width: 400px;
-    padding: 20px;
-    margin: 30px auto;
-    border: 4px soild #333;
+p {
+    line-height: 1.6;
+    color: #555;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: black;
+}
+
+/* LAYOUT CONTAINER */
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    
+    gap: 2rem;
 }
 
+/* HEADER */
+header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+}
 
-header nav li {
-    justify-content: center;
+header .container {
+    display: flex;
     align-items: center;
-    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
-footer{
+/* NAVIGATION */
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+nav a {
+    opacity: 0.8;
+}
+
+/* MAIN */
+main {
+    padding: 4rem 1rem;
+}
+
+main .container {
+    margin-bottom: 2rem;
+}
+
+/* CARD / HIGHLIGHT SECTIONS */
+.highlight {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.highlight:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* FOOTER */
+footer {
     display: flex;
     justify-content: center;
-    
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+}
+
+/* SECTIONS */
+section {
+    margin-top: 3rem;
+}
+
+/* RESPONSIVE (MEDIA QUERY) */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
