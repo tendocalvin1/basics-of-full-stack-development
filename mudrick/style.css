@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
+}
+
+body{
     background-color: #f4f4f4;
 }
 
@@ -7,29 +10,12 @@ p{
     color:black;
 }
 
-/* .highlight p{
-    padding: 1rem;
-    background-color: blue;
-    border: 2px solid black;
 
-}
-
-.highlight ul{
-    border: 2px solid black;
-} */
 
 .highlight {
-    max-width: 700px;
-    width: 100%;
     padding: 20px;
-    margin: 30px auto;
     border: 4px solid #ddd;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 2.5rem;
+    border-radius: 25px;
     
 }
 
@@ -39,12 +25,7 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-/* This is for header
-Why this works:
-Main axis = vertical (column)
-align-items: center → horizontal centering
-Header content is stacked and centered cleanly 
-*/
+
 
 nav ul{
     display: flex;
@@ -54,46 +35,26 @@ nav ul{
     margin: 0;
 }
 
-/* Why this works: This is for the list
-ul is the layout container
-gap replaces margins (professional approach)
-Main axis = horizontal
-Links are centered along main axis */
-
 footer {
     display: flex;
     justify-content: center;
     gap: 2rem;
-}
-
-/* flex-direction: row → main axis is horizontal
-flex-direction: column → main axis is vertical */
-
-/* 📌 Memorize this sentence exactly: Flex-direction defines the main axis. Justify-content only aligns along it. */
-
-/* 1️⃣ What defines the main axis in Flexbox? Answer: flex-direction */
-
-/* 2️⃣ Why align-items: center centered your header content horizontally : align-items ALWAYS works on the cross axis
-NEVER on the main axis*/
-
-
-/* 3️⃣ Why gap is better than margins for flex layouts: 
-gap only adds space between items, not on the outer edges of the container */
-
-/* 🔒 LOCK THIS INTO MEMORY (DO NOT FORGET)
-
-Memorize these three laws of Flexbox:
-
-1️⃣ flex-direction defines the main axis
-2️⃣ justify-content works on the main axis
-3️⃣ align-items works on the cross axis */
-
-
-footer a {
-    text-decoration: none;
     margin-top: 3rem;
     padding: 1.5rem 0;
 }
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 4px solid #ddd;
+    border-radius: 20px;
+}
+
 
 main{
     padding: 2rem 1rem;
